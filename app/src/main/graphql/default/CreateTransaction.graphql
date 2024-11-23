@@ -1,0 +1,17 @@
+mutation AddTransaction($compteId: ID!, $montant: Float!, $date: String!, $type: TypeTransaction!) { # Use the enum here
+    addTransaction(transactionRequest: { # Provide the input object as expected by the backend
+        compteId: $compteId,
+        montant: $montant,
+        date: $date,
+        type: $type
+    }) {
+        id
+        montant
+        date
+        type
+        compte { # Include the related account if needed
+            id
+            solde
+        }
+    }
+}

@@ -1,0 +1,8 @@
+mutation SaveCompte($compte: CompteRequest!) {
+  saveCompte(compte: $compte) {
+    id
+    solde
+    dateCreation
+    type
+  }
+}

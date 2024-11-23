@@ -1,0 +1,8 @@
+query GetCompteById($id: ID!) {
+    compteById(id: $id) {
+        id
+        solde
+        dateCreation
+        type
+    }
+}

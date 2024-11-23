@@ -1,0 +1,7 @@
+query GetTotalSolde {
+    totalSolde {
+        count
+        sum
+        average
+    }
+}

@@ -1,0 +1,7 @@
+query GetTransactionStats {
+    transactionStats {
+        count
+        sumDepots
+        sumRetraits
+    }
+}

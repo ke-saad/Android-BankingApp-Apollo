@@ -1,0 +1,14 @@
+query GetTransactionsByCompteId($compteId: ID!) {
+    compteTransactions(id: $compteId) {
+        id
+        montant
+        date
+        type
+        compte {
+            id
+            solde
+            dateCreation
+            type
+        }
+    }
+}

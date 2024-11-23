@@ -1,0 +1,14 @@
+query GetAllTransactions {
+  allTransactions {
+    id
+    montant
+    date
+    type
+    compte {
+      id
+      solde
+      dateCreation
+      type
+    }
+  }
+}
