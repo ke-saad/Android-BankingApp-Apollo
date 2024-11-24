@@ -61,7 +61,7 @@ apollo {
         schemaFile.set(file("src/main/graphql/default/schema.graphqls"))
         sealedClassesForEnumsMatching.set(listOf(".*"))
         introspection {
-            endpointUrl.set("http://localhost:8080/graphql")
+            endpointUrl.set("http://10.0.2.2:8080/graphql")
             schemaFile.set(file("src/main/graphql/default/schema.graphqls"))
         }
     }
